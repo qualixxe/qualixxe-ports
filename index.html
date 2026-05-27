@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qualixxe's ports | Releases</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card-bg: #161b22;
+            --border: #30363d;
+            --text: #c9d1d9;
+            --text-dim: #8b949e;
+            --blue: #58a6ff;
+            --green: #2ea44f;
+            --orange: #f0883e;
+            --red: #f85149;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        .container { max-width: 650px; margin: 0 auto; }
+        
+        header { text-align: center; padding: 40px 0 20px 0; border-bottom: 1px solid var(--border); }
+        header h1 { margin: 0 0 10px 0; font-size: 2rem; color: #fff; }
+        header p { margin: 0; color: var(--text-dim); font-size: 1.1rem; }
+        
+        .social { margin-top: 15px; display: flex; justify-content: center; gap: 15px; }
+        .social a { color: var(--blue); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+        .social a:hover { text-decoration: underline; }
+        
+        .disclaimer { 
+            background: rgba(248, 81, 73, 0.1); 
+            border: 1px solid rgba(248, 81, 73, 0.2);
+            border-left: 4px solid var(--red); 
+            padding: 15px; margin: 25px 0; border-radius: 6px; font-size: 0.85rem; 
+        }
+        .disclaimer strong { color: #ff7b72; }
+        
+        .card { 
+            background: var(--card-bg); 
+            border: 1px solid var(--border); 
+            border-radius: 8px; padding: 20px; margin-bottom: 25px; 
+        }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .card-header h2 { margin: 0; font-size: 1.35rem; color: #fff; }
+        
+        .badge { padding: 3px 8px; font-size: 0.75rem; font-weight: 600; border-radius: 12px; }
+        .badge.stable { background: rgba(46, 164, 79, 0.15); color: #56d364; border: 1px solid rgba(46,164,79,0.3); }
+        .badge.test { background: rgba(240, 136, 62, 0.15); color: var(--orange); border: 1px solid rgba(240,136,62,0.3); }
+        
+        .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; font-size: 0.85rem; margin-bottom: 15px; color: var(--text-dim); border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+        .info-grid span strong { color: var(--text); }
+        
+        .changelog { font-size: 0.9rem; margin-bottom: 20px; }
+        .changelog div { font-weight: 600; color: #fff; margin-bottom: 5px; }
+        .changelog ul { margin: 0; padding-left: 20px; color: #b1bac4; }
+        .changelog li { margin-bottom: 3px; }
+        
+        .btn { 
+            display: block; text-align: center; background: var(--blue); color: #fff; 
+            padding: 10px; font-weight: bold; border-radius: 6px; text-decoration: none; font-size: 0.95rem;
+        }
+        .btn:hover { background: #478be6; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>qualixxe's ports | Releases</h1>
+        <p>Кастомн��е прошивки и порты для Mi 11 Lite 4G</p>
+        <div class="social">
+            <a href="https://t.me" target="_blank">✈️ Telegram Чат</a>
+            <a href="https://4pda.to" target="_blank">📱 Профиль 4PDA</a>
+        </div>
+    </header>
+
+    <div class="disclaimer">
+        <strong>ДИСКЛЕЙМЕР:</strong> Автор не несет ответственности за ваши устройства. Все манипуляции (разблокировка загрузчика, прошивка) вы делаете на свой страх и риск. Бэкап обязателен!
+    </div>
+
+    <!-- КАРТОЧКА ПРОШИВКИ (Скопируй этот блок отсюда, чтобы добавить новую) -->
+    <div class="card">
+        <div class="card-header">
+            <h2>HyperOS Port</h2>
+            <span class="badge stable">Стабильная</span> <!-- Для тестов смени класс на "badge test" -->
+        </div>
+        <div class="info-grid">
+            <span><strong>ОС:</strong> Android 14</span>
+            <span><strong>Версия:</strong> v1.0.4.0</span>
+            <span><strong>Дата:</strong> 27.05.2026</span>
+        </div>
+        <div class="changelog">
+            <div>Список изменений:</div>
+            <ul>
+                <li>Первый стабильный запуск порта HyperOS</li>
+                <li>Исправлена работа камеры, NFC и Bluetooth</li>
+                <li>Удален лишний китайский софт</li>
+            </ul>
+        </div>
+        <!-- Замени РЕЛИЗ_ССЫЛКА на реальную ссылку для скачивания -->
+        <a href="РЕЛИЗ_ССЫЛКА" class="btn" target="_blank">Скачать прошивку</a>
+    </div>
+    <!-- КОНЕЦ КАРТОЧКИ -->
+
+    <!-- ВТОРАЯ КАРТОЧКА ДЛЯ ПРИМЕРА -->
+    <div class="card">
+        <div class="card-header">
+            <h2>OSS Custom ROM</h2>
+            <span class="badge test">Тест</span>
+        </div>
+        <div class="info-grid">
+            <span><strong>ОС:</strong> Android 14</span>
+            <span><strong>Версия:</strong> v2.0-Alpha</span>
+            <span><strong>Дата:</strong> 15.05.2026</span>
+        </div>
+        <div class="changelog">
+            <div>Список изменений:</div>
+            <ul>
+                <li>Чистый исходный код (OSS)</li>
+                <li>Вшито кастомное ядро для автономности</li>
+                <li>Баг: не работает сканер отпечатков</li>
+            </ul>
+        </div>
+        <a href="РЕЛИЗ_ССЫЛКА" class="btn" target="_blank">Скачать прошивку</a>
+    </div>
+
+</div>
+
+</body>
+</html>
